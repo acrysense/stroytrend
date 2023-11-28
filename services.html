@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>СТРОЙТРЕНД - Главная</title>
-	<meta property="og:title" content="СТРОЙТРЕНД - Главная">
+	<title>СТРОЙТРЕНД - Наши услуги</title>
+	<meta property="og:title" content="СТРОЙТРЕНД - Наши услуги">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="СТРОЙТРЕНД - Главная">
+	<meta property="og:site_name" content="СТРОЙТРЕНД - Наши услуги">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -34,7 +34,7 @@
 					</a>
 					<nav class="nav header__nav">
 						<ul class="nav__list">
-							<li class="nav__item ">
+							<li class="nav__item is--active">
 								<a href="services.html" class="nav__link">Услуги</a>
 							</li>
 							<li class="nav__item ">
@@ -68,77 +68,83 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- main -->
-			<section class="main" id="main">
+			<!-- services -->
+			<section class="services" id="services">
 				<div class="container">
-					<picture class="main__bg">
-						<img src="img/main-bg.jpg" alt="Image">
-					</picture>
-					<div class="main__top">
-						<h1 class="main__heading">Создаем, обновляем и преображаем пространства <br><span>в Москве и Московской области</span></h1>
-						<div class="main__group">
-							<span class="main__tags">Реконструкция | Кладочные работы | Монолитные работы | Генеральный подряд</span>
-							<a href="#" class="main__btn btn">Подробнее →</a>
-						</div>
+					<div class="breadcrumb" aria-label="Breadcrumb">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a href="index.html" class="breadcrumb__link">Главная</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="services.html" class="breadcrumb__link">Услуги</a>
+							</li>
+						</ol>
 					</div>
-					<div class="main__stats">
-						<picture class="main__stats-bg">
-							<img src="img/stats-bg.jpg" alt="Image">
-						</picture>
-						<div class="main__inner">
-							<div class="main__inner-item">
-								<span class="main__value">50+</span>
-								<span class="main__help">Реализованных <br>проектов</span>
+					<div class="page-top">
+						<h1 class="page-top__heading">Наши услуги</h1>
+						<p class="page-top__description">Мы выступаем как непосредственный исполнитель работ и готовы принять на себя всю полноту ответственности Генерального подрядчи­­­­­­ка</p>
+					</div>
+					<div class="services__wrapper">
+						<a href="#" class="services-card services__item">
+							<picture class="services-card__bg">
+								<img src="img/services-01.jpg" alt="Image">
+							</picture>
+						</a>
+						<a href="#" class="services-card services__item">
+							<picture class="services-card__icon">
+								<img src="img/services-icon-01.svg" alt="Icon">
+							</picture>
+							<div class="services-card__body">
+								<span class="services-card__title">Генеральный подряд</span>
+								<span class="services-card__help">Текст под описание услуги</span>
 							</div>
-							<div class="main__inner-item">
-								<span class="main__value">8 лет</span>
-								<span class="main__help">Реализуем проекты любой сложности</span>
+						</a>
+						<a href="#" class="services-card services__item">
+							<picture class="services-card__icon">
+								<img src="img/services-icon-02.svg" alt="Icon">
+							</picture>
+							<div class="services-card__body">
+								<span class="services-card__title">Отдельные работы</span>
+								<span class="services-card__help">Текст под описание услуги</span>
 							</div>
-							<div class="main__inner-item">
-								<span class="main__value">20+</span>
-								<span class="main__help">Проектов по реконструкции и модернизации объектов</span>
+						</a>
+						<a href="#" class="services-card services__item">
+							<picture class="services-card__icon">
+								<img src="img/services-icon-03.svg" alt="Icon">
+							</picture>
+							<div class="services-card__body">
+								<span class="services-card__title">Монолитные работы</span>
+								<span class="services-card__help">Текст под описание услуги</span>
 							</div>
-							<div class="main__inner-item">
-								<span class="main__value">97%</span>
-								<span class="main__help">Заказчиков оценивают наш сервис как высококлассный</span>
+						</a>
+						<a href="#" class="services-card services__item">
+							<picture class="services-card__icon">
+								<img src="img/services-icon-04.svg" alt="Icon">
+							</picture>
+							<div class="services-card__body">
+								<span class="services-card__title">Кладочные работы</span>
+								<span class="services-card__help">Текст под описание услуги</span>
 							</div>
-						</div>
+						</a>
+						<a href="#" class="services-card services-card--yellow services__item">
+							<picture class="services-card__icon">
+								<img src="img/services-icon-05.svg" alt="Icon">
+							</picture>
+							<div class="services-card__body">
+								<span class="services-card__title">Реконструкция</span>
+								<span class="services-card__help">Текст под описание услуги</span>
+							</div>
+						</a>
 					</div>
 				</div>
 			</section>
-			<!-- end of main -->
-			<!-- news -->
-			<section class="news section-indent section-indent--lg" id="news">
-				<div class="container">
-					<div class="section-heading">
-						<span class="section-heading__tag">| Статьи |</span>
-						<h2 class="section-heading__title">Делимся новостями</h2>
-					</div>
-					<div class="news__wrapper">
-						<article class="news-card news__item" style="background-image: url(img/news-01.jpg);">
-							<span class="news-card__help">03.11.2023</span>
-							<div class="news-card__inner">
-								<a href="#" class="news-card__title">Строительство коммерческой недвижимости в России</a>
-								<a href="#" class="news-card__link">Читать статью →</a>
-							</div>
-						</article>
-						<article class="news-card news__item" style="background-image: url(img/news-01.jpg);">
-							<span class="news-card__help">03.11.2023</span>
-							<div class="news-card__inner">
-								<a href="#" class="news-card__title">Строительство коммерческой недвижимости в России</a>
-								<a href="#" class="news-card__link">Читать статью →</a>
-							</div>
-						</article>
-					</div>
-					<a href="#" class="news__more btn">Читать все статьи</a>
-				</div>
-			</section>
-			<!-- end of news -->
+			<!-- end of services -->
 			<!-- feedback -->
 			<section class="feedback" id="feedback">
 				<div class="container">
 					<picture class="feedback__bg">
-						<img src="img/feedback-bg.jpg" alt="Image">
+						<img src="img/feedback-bg-02.jpg" alt="Image">
 					</picture>
 					<div class="feedback__wrapper">
 						<div class="feedback__body">
