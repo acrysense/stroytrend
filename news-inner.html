@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<a href="index.html" class="header__logotype">
-						<img src="img/logotype.png" width="82" height="69" alt="STROYTREND">
+						<img src="img/logotype.svg" width="82" height="69" alt="STROYTREND">
 					</a>
 					<nav class="nav header__nav">
 						<ul class="nav__list">
@@ -51,7 +51,7 @@
 							</li>
 						</ul>
 					</nav>
-					<a href="tel:74991300207" class="header__link">
+					<a href="#" class="header__link modal-btn" data-id="modal-feedback">
 						<svg>
 							<use xlink:href="img/sprite.svg#icon-phone"></use>
 						</svg>
@@ -85,6 +85,7 @@
 						</ol>
 					</div>
 					<picture class="news-inner__bg">
+						<source srcset="img/news-inner-bg.webp" type="image/webp">
 						<img src="img/news-inner-bg.jpg" alt="Image">
 					</picture>
 					<div class="news-inner__top">
@@ -127,6 +128,7 @@
 			<section class="feedback" id="feedback">
 				<div class="container">
 					<picture class="feedback__bg">
+						<source srcset="img/feedback-bg.webp" type="image/webp">
 						<img src="img/feedback-bg.jpg" alt="Image">
 					</picture>
 					<div class="feedback__wrapper">
@@ -165,7 +167,7 @@
 				<div class="footer__wrapper">
 					<div class="footer__block">
 						<a href="index.html" class="footer__logotype">
-							<img src="img/logotype.png" width="82" height="69" alt="STROYTREND">
+							<img src="img/logotype.svg" width="82" height="69" alt="STROYTREND">
 						</a>
 					</div>
 					<div class="footer__block">
@@ -209,6 +211,60 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- modals -->
+	<div class="modal" id="modal-feedback">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<picture class="modal__bg">
+					<source srcset="img/modal-bg.webp" type="image/webp">
+					<img src="img/modal-bg.jpg" alt="Image">
+				</picture>
+				<div class="modal__top">
+					<picture class="modal__icon">
+						<img src="img/icon-time.svg" alt="Icon">
+					</picture>
+					<h2 class="modal__heading">В течение 5-ти минут с вами свяжется наш специалист</h2>
+				</div>
+				<form action="#" class="modal-form modal__form">
+					<div class="modal-form__inner">
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="text" class="input-field__input" placeholder="Ваше имя">
+							</div>
+						</div>
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<input type="tel" class="input-field__input" placeholder="+7" data-inputmask="'mask': '+7 (999) 999-99-99'">
+							</div>
+						</div>
+					</div>
+					<div class="modal-form__inner">
+						<div class="input-field modal-form__input">
+							<div class="input-field__inner">
+								<textarea class="input-field__textarea" placeholder="Ваш вопрос" maxlength="200"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-form__bottom">
+						<div class="square-checkbox modal-form__checkbox">
+							<input type="checkbox" class="square-checkbox__input" id="modal-feedback-policy">
+							<label for="modal-feedback-policy" class="square-checkbox__group">
+								<span class="square-checkbox__icon"></span>
+								<span class="square-checkbox__title">Я принимаю условия передачи информации</span>
+							</label>
+						</div>
+						<button class="modal-form__btn btn">Отправить →</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
